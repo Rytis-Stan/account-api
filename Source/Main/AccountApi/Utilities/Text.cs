@@ -1,10 +1,10 @@
 namespace AccountApi.Utilities;
 
-public class TextFromString : IText
+public class Text : IText
 {
     private readonly string _text;
 
-    public TextFromString(string text)
+    public Text(string text)
     {
         _text = text;
     }

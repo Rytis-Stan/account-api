@@ -19,6 +19,6 @@ public class AccountsController : ControllerBase
     [HttpPost]
     public AccountValidationResultDto Validate([FromBody] string accountsFile)
     {
-        return _validateAccountsFileCommand.Execute(new TextFromString(accountsFile)).ToDto();
+        return _validateAccountsFileCommand.Execute(new Text(accountsFile)).ToDto();
     }
 }
